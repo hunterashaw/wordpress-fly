@@ -1,4 +1,4 @@
-# Fly.io Wordpress
+# Wordpress on [fly.io](https://fly.io/)
 
 A starting point for deploying a Wordpress application to [fly.io](https://fly.io/).
 
@@ -68,7 +68,7 @@ fly deploy
 
 6. Ensure deployment was successful. You can view the deployment progress in your [fly.io dashboard](https://fly.io/dashboard) > [your new app] > Monitoring
 
-7. SSH into VM and fix volume permission issue. `fly.io` gives the `root` user ownership of the mounted volume, which we must manually fix by running: 
+7. [SSH into VM and fix volume permission issue](https://community.fly.io/t/cant-create-sqlite-database-in-mounted-volume/2925/4). `fly.io` gives the `root` user ownership of the mounted volume, which we must manually fix by running: 
 ```
 fly ssh console
 chown -R www-data /var/www/html/wp-content/database
