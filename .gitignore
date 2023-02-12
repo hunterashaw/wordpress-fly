@@ -1,0 +1,6 @@
+node_modules
+.env
+wp-content/database
+wp-content/themes/twenty*
+wp-content/uploads
+.DS_Store
